@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+html,body{
+    background-color: #FFA680;
+    overflow-y: hidden;/
+}
+
+canvas {
+    display: block;
+}
+
+
+.navbar-wrapper {
+    margin-top: 50px;
+    padding: 24px;
+}
+
+.navbar {
+    margin-top: 10px;
+    background: white;
+    height: 4.8vw;
+    width: 94vw;
+    border-radius: 23px;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 28px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+}
+
+.nav-links {
+    margin-left: 21px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links li {
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.lang{
+    height: 20px;
+    width: auto;
+}
+
+.cta {
+    height: 60px;
+    width: auto;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 30px;
+    font-size:18px;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+
+
+.mainpage-wrapper{
+    display: flex;
+}
+
+.right{
+    margin-top: 140px;
+    margin-left: 100px;
+    height:1000px;
+    width: 50%;
+    background-image: url("https://images.ctfassets.net/clixtyxoaeas/5kN6r7pB5NscZPEalRIRes/ffe43ecbc8e4fcfd00c48899cb08922c/browser-desktop.png?w=1920&q=75&fm=avif");
+    background-size: contain;
+}
+
+
+.left{
+    height:1000px;
+    width: 50%;
+}
+.text-top{
+    justify-self: center;
+
+}
+.tab-wrapper {
+    margin-top: 150px;
+    display: flex;
+    gap: 8px;
+
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    height: fit-content;
+
+    width: fit-content;
+    background: transparent;
+}
+
+.tab {
+    border: none;
+    background: transparent;
+    padding: 14px 28px;
+
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 500;
+
+    color: #2b0a3d;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.tab:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* ACTIVE TAB */
+.tab.active {
+    background: linear-gradient(135deg, #2b0a3d, #1a0525);
+    color: #fff;
+}
+
+.text-top h1{
+    font-size: 60px;
+    font-weight: 450;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+/* Center everything */
+.browser-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* THIS CONTROLS CARD SPACING */
+.browser-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    max-width: 700px;
+}
+
+/* Card */
+.browser-card {
+    width: 180px;
+    height: 180px;
+    background: #f6d8c7;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    text-decoration: none;
+    color: #1b1464;
+    font-size: 22px;
+    font-weight: 500;
+
+    transition: transform 0.2s ease;
+}
+.browser-card span{
+    margin-top: 20px;
+}
+
+/* Active (white) card */
+.browser-card.active {
+    background: white;
+}
+
+/* Icon */
+.browser-card img {
+    width: 48px;
+    height: auto;
+}
+
+/* Hover effect */
+.browser-card:hover {
+    transform: translateY(-4px);
+}
+
